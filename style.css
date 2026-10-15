@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    height: 100vh;
+    background-color: rgba(237, 18, 233, 0.4);
+    min-width: 375px;
+}
+
+header {
+    padding: 25px 10%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    color:black;
+}
+
+header a:hover {
+    opacity: 0.7;
+}
+
+nav {
+    display: flex;
+    gap: 60px;
+}
+
+main {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.card-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.card {
+    border:rgba(0, 0, 0, 0.5) solid 1px;
+    border-radius: 20px;
+    background-color: crimson;
+    padding: 40px 120px;
+    font-size: 28px;
+    transition: all 0.5s ease;
+} 
+
+.main {
+    font-size: 40px;
+    color: crimson;
+    padding-top: 80px;
+}
+
+@media (max-width: 900px) {
+    .card {
+        padding: 40px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 32px;
+    }
+}
+
