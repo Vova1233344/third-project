@@ -39,7 +39,7 @@ main {
 }
 
 .card {
-    border:rgba(0, 0, 0, 0.5) solid 1px;
+    box-shadow: 5px 10px 10px rgb(33, 20, 20);
     border-radius: 20px;
     background-color: crimson;
     padding: 40px 120px;
@@ -75,7 +75,26 @@ main {
 }
 
 .btn-7 {
-    background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
+  width: 230px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.btn-7 {
+    background: linear-gradient(0deg, rgba(237, 83, 83, 0.904) 0%, crimson 100%);
       line-height: 42px;
       padding: 0;
       border: none;
@@ -92,7 +111,7 @@ main {
       content: "";
       right: 0;
       bottom: 0;
-      background: rgba(251,75,2,1);
+      background: crimson;
       box-shadow:
        -7px -7px 20px 0px rgba(255,255,255,.9),
        -4px -4px 5px 0px rgba(255,255,255,.9),
@@ -109,7 +128,7 @@ main {
       height: 2px;
     }
     .btn-7:hover{
-      color: rgba(251,75,2,1);
+      color: crimson;
       background: transparent;
     }
     .btn-7:hover:before {
@@ -124,7 +143,7 @@ main {
       content: "";
       left: 0;
       top: 0;
-      background: rgba(251,75,2,1);
+      background: crimson;
       box-shadow:
        -7px -7px 20px 0px rgba(255,255,255,.9),
        -4px -4px 5px 0px rgba(255,255,255,.9),
@@ -145,22 +164,4 @@ main {
     }
     .btn-7 span:hover:after {
       width: 100%;
-    }
-.btn-7 {
-        width: 130px;
-        height: 40px;
-        color: #fff;
-        border-radius: 5px;
-        padding: 10px 25px;
-        font-family: 'Lato', sans-serif;
-        font-weight: 500;
-        background: transparent;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        position: relative;
-        display: inline-block;
-         box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-         7px 7px 20px 0px rgba(0,0,0,.1),
-         4px 4px 5px 0px rgba(0,0,0,.1);
-        outline: none;
     }

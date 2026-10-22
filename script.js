@@ -30,6 +30,26 @@ let masive = [
         3: 'Телефон'
     }
     },
+    {
+        id: 4,
+        correct: 1,
+        question: 'nigth',
+        answers: {
+        1: 'ночь',
+        2: 'день',
+        3: 'месяц'
+    }
+    },
+    {
+        id: 5,
+        correct: 3,
+        question: 'dog',
+        answers: {
+        1: 'кот',
+        2: 'хомяк',
+        3: 'собака'
+    }
+    },
 ]
 
 let counter = 0
@@ -47,7 +67,17 @@ cards.forEach(item => {item.addEventListener('click', function(){
     }
 })})
 
+function update(word){
+    main.innerHTML = word.question
+    cards.forEach((item, index) => {
+        item.innerHTML = word.answers[index + 1]
+        item.dataset.correct = (index + 1) === word.correct
+        item.style.backgroundColor = ''
+    })
+}
+
 button.addEventListener('click', function() {
-    main.innerHTML = masive[counter].question
-    counter ++ 
+    if (counter < masive.length){
+    update(masive[counter])
+    counter ++}
 })
